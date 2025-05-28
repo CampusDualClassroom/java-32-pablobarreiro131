@@ -32,7 +32,7 @@ public class Exercise32 {
     public static void printToFile(String string) {
         File path = new File("src/main/resources/data.txt");
         try{
-            FileWriter fr = new FileWriter(path, true);
+            FileWriter fr = new FileWriter(path, false);
             BufferedWriter bw = new BufferedWriter(fr);
             PrintWriter pw = new PrintWriter(bw);
             pw.println(string);
